@@ -1,0 +1,342 @@
+﻿@charset "utf-8";
+@import url("fontawesome-3.2.1.min.css");
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2 a{}
+.row3, .row3 a{}
+.row4{border-top:10px solid;}
+.row5{border-top:1px solid;}
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:50px 0; text-align:center;}
+#logo{display:block; width:500px; height:250px; margin:0 auto -55px auto; z-index:999;}
+#logo h1{margin:0; padding:0; font-variant:small-caps ; font-size:90px;}
+
+/* Intro
+--------------------------------------------------------------------------------------------------------------- */
+#intro{padding:80px 0; text-align:justify;}
+.txtblock{display:block; line-height:1.6em; width:65%; margin:0 auto;}
+
+
+/* Слайдер */
+.slides {
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: center;
+    width: 1000px;
+}
+
+    .slides ul {
+        list-style: none;
+        position: relative;
+    }
+/* Кадры анимации #anim_slides */
+
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity: 0;
+    }
+
+    6% {
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes anim_slides {
+    0% {
+        opacity: 0;
+    }
+
+    6% {
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.slides ul li {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    /* анимация css3 */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+
+
+
+    /* Задержки css3 */
+
+    .slides ul li:nth-child(2), .slides ul li:nth-child(2) div {
+        -webkit-animation-delay: 6.0s;
+        -moz-animation-delay: 6.0s;
+    }
+
+    .slides ul li:nth-child(3), .slides ul li:nth-child(3) div {
+        -webkit-animation-delay: 12.0s;
+        -moz-animation-delay: 12.0s;
+    }
+
+    .slides ul li:nth-child(4), .slides ul li:nth-child(4) div {
+        -webkit-animation-delay: 18.0s;
+        -moz-animation-delay: 18.0s;
+    }
+
+    .slides ul li img {
+        display: block;
+    }
+
+/* Кадры анимации #anim_titles */
+
+@-webkit-keyframes anim_titles {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+
+
+    5% {
+        left: 10%;
+        opacity: 1;
+    }
+
+
+    20% {
+        left: 10%;
+        opacity: 1;
+    }
+
+
+    25% {
+        left: 100%;
+        opacity: 0;
+    }
+
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+
+@-moz-keyframes anim_titles {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+
+
+    5% {
+        left: 10%;
+        opacity: 1;
+    }
+
+
+    20% {
+        left: 10%;
+        opacity: 1;
+    }
+
+
+    25% {
+        left: 100%;
+        opacity: 0;
+    }
+
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+
+.slides ul li div {
+    background-color: #000000;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px #FFFFFF inset;
+    color: #FFFFFF;
+    font-size: 26px;
+    left: 10%;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    /* Анимация css */
+    -webkit-animation-name: anim_titles;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+
+/* Homepage Intro
+--------------------------------------------------------------------------------------------------------------- */
+#hp_intro{padding:80px 0; text-align:center;}
+#hp_intro a{display:block;}
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:40px 0;}
+#copyright p{margin:0; padding:0;}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{display:block; position:relative; width:100%; height:-30px; line-height:normal;}
+#mainav ul{}
+#mainav ul ul{z-index:9999; position:absolute; width:160px; text-align:left;}
+#mainav ul ul ul{left:160px; top:0;}
+#mainav li{display:inline-block; margin:0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0; position:relative;}
+#mainav li a{display:block; position:relative; padding:10px 5px; border:solid; border-width:0 0 2px 0;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 5px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:0; left:50%; margin-left:-2px;}
+#mainav li li .drop::after{top:15px; left:5px; margin-left:0;}
+#header nav ul:first-child > li{display:inline-block; float:left; width:112px; height:50px; margin-right:1px;}
+#header nav ul:first-child > li:nth-child(3){margin-right:151px;}
+#header nav ul:first-child > li:nth-child(4){margin-left:151px;}
+#header nav ul:first-child > li:last-child{margin-right:0;}
+#mainav ul ul{display:none;}
+#mainav ul li:hover > ul{display:block;}
+
+/* Breadcrumb */
+#breadcrumb{padding:50px 0;}
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
+#breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px; text-transform:uppercase;}
+#breadcrumb li a::after{top:5px; right:0; content:"\f101";}
+#breadcrumb li:last-child a{margin:0; padding:0;}
+#breadcrumb li:last-child a::after{display:none;}
+
+/* Sidebar Navigation */
+.sidebar nav{display:block; width:100%;}
+.sidebar nav li{margin:0 0 3px 0; padding:0;}
+.sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 2px 0;}
+.sidebar nav a::after{top:9px; left:5px; content:"\f101";}
+.sidebar nav ul ul a{padding-left:35px;}
+.sidebar nav ul ul a::after{left:25px;}
+.sidebar nav ul ul ul a{padding-left:55px;}
+.sidebar nav ul ul ul a::after{left:45px;}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+
+body{color:#000000; background-color:#efefef;}
+a{color:#000000;}
+hr, .borderedbox{border-color:#000000;}
+label span{color:#000000; background-color:inherit;}
+.overlay{color:inherit; background-color:#000000;}
+
+/* Rows */
+.row1, .row1 a { color: #000000; background-color: #ffaec8;}
+.row2{color:#292929; background-color:inherit;}
+.row3{color:#292929; background-color:#FFFFFF;}
+.row4{color:#000000; background-color:#141414; border-color:#1F1F1F;}
+.row5, .row5 a{color:#000000; background-color:#ffaec8;}
+.row5{border-color:#575757;}
+
+/* Homepage */
+#hp_intro a h6{color:#000000; background-color:inherit;}
+#hp_intro a .circle{color:#000000; background-color:#FDC703; border-color:transparent;}
+#hp_intro a:hover .circle{color:#000000; background-color:inherit; border-color:#FFFFFF;}
+
+/* Footer */
+#footer .title{border-color:#ffaec8;}
+
+/* Navigation */
+#mainav li a{color:inherit; border-color:#ffaec8;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FFFFFF; border-color:#ffaec8;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:#ffaec8;}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#ffaec8;}
+#breadcrumb a{color:#FFFFFF; background-color:inherit;}
+#breadcrumb li:last-child a{color:#FDC703;}
+#container .sidebar nav a{color:#888888; border-color:#D7D7D7;}
+#container .sidebar nav a:hover{color:#FDC703;}
+.pagination a, .pagination strong{border-color:#D7D7D7;}
+.pagination .current{color:#FFFFFF; background-color:#000000;}
+
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
+th{color:#000000; background-color:#373737;}
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
